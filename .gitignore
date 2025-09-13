@@ -1,0 +1,17 @@
+# Ignore virtual environments
+dev/
+venv/
+.env/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs and data
+*.log
+*.pth
+*.pt
+*.db
+.DS_Store
