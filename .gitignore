@@ -11,7 +11,7 @@ __pycache__/
 
 # Ignore logs and big files
 *.log
-*.pth
+
 *.pt
 *.db
 .DS_Store
