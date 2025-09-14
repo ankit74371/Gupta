@@ -1,4 +1,4 @@
-# Ignore virtual environments
+# Ignore Python virtual environments
 dev/
 venv/
 .env/
@@ -9,9 +9,10 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Ignore logs and data
+# Ignore logs and big files
 *.log
 *.pth
 *.pt
 *.db
 .DS_Store
+

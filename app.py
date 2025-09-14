@@ -122,7 +122,7 @@ def load_model():
         logger.info(f"Using device: {device}")
         
         # Check if model file exists
-        model_path = 'civic_issue_classifier.pth'
+        model_path = 'civic_issue_classifie.pth'
         if not os.path.exists(model_path):
             raise FileNotFoundError(f"Model file '{model_path}' not found. Please ensure it's in the same directory as app.py")
         
@@ -557,6 +557,7 @@ def initialize_app():
     """Initialize the application"""
     try:
         logger.info("Initializing Civic Issue Classifier API...")
+        # You can add any setup code here (loading model, etc.)
         
         # Load model
         load_model()
@@ -576,9 +577,9 @@ def initialize_app():
 if __name__ == '__main__':
     # Initialize the application
     if initialize_app():
-        logger.info("Starting Flask development server on port 5800...")
+        logger.info("Starting Flask development server on port 5880...")
         # For development
-        app.run(host='0.0.0.0', port=5800, debug=False)
+        app.run(host='0.0.0.0', port=5880, debug=False)
     else:
         logger.error("Failed to start application due to initialization errors")
         exit(1)
